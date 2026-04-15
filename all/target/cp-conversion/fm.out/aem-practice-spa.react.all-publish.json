@@ -1,0 +1,12 @@
+{
+  "id":"com.practice.react:aem-practice-spa.react.all:slingosgifeature:publish:1.0.0-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/wknd-spa-react/</",
+        "/:/"
+      ],
+      ":configurator:content-package-origins":"com.practice.react:aem-practice-spa.react.all:1.0.0-SNAPSHOT|com.practice.react:aem-practice-spa.react.ui.config:1.0.0-SNAPSHOT"
+    }
+  }
+}

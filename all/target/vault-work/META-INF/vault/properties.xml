@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Practice SPA React App - All</comment>
+<entry key="allowIndexDefinitions">false</entry>
+<entry key="created">2026-04-15T11:00:21.445Z</entry>
+<entry key="groupId">com.practice.react</entry>
+<entry key="name">aem-practice-spa.react.all</entry>
+<entry key="description">All content package for Practice SPA React App</entry>
+<entry key="artifactId">aem-practice-spa.react.all</entry>
+<entry key="version">1.0.0-SNAPSHOT</entry>
+<entry key="packageType">container</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">com.practice.react</entry>
+</properties>
