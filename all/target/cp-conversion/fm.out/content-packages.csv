@@ -1,4 +1,4 @@
-# File created on Wed Apr 15 16:30:23 IST 2026 by the Apache Sling Content Package to Sling Feature converter
+# File created on Thu Apr 16 14:02:29 IST 2026 by the Apache Sling Content Package to Sling Feature converter
 # content-package path, content-package ID, content-package type, content-package parent ID, path in parent content-package, absolute path
 C:\Users\srahulja\Desktop\aem-practice-spa.react-main\all\target\aem-practice-spa.react.all-1.0.0-SNAPSHOT.zip,com.practice.react:aem-practice-spa.react.all:1.0.0-SNAPSHOT,CONTAINER,,,
 C:\Users\srahulja\Desktop\aem-practice-spa.react-main\all\target\aem-practice-spa.react.all-1.0.0-SNAPSHOT.zip,com.practice.react:aem-practice-spa.react.ui.apps:1.0.0-SNAPSHOT,APPLICATION,com.practice.react:aem-practice-spa.react.all:1.0.0-SNAPSHOT,/jcr_root/apps/wknd-spa-react-packages/application/install/aem-practice-spa.react.ui.apps-1.0.0-SNAPSHOT.zip,C:\Users\srahulja\Desktop\aem-practice-spa.react-main\all\target\aem-practice-spa.react.all-1.0.0-SNAPSHOT.zip!/jcr_root/apps/wknd-spa-react-packages/application/install/aem-practice-spa.react.ui.apps-1.0.0-SNAPSHOT.zip
