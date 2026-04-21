@@ -31,7 +31,7 @@ class ContentCard extends Component {
         }
 
         return (
-            <article className="content-card">
+            <article className={`content-card ${this.props.appliedCssClassNames || ''}`}>
                 {cardImage && (
                     <div className="card-image-wrapper">
                         <img src={cardImage} alt={title} className="card-image" />

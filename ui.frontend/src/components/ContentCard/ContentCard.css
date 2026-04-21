@@ -1,5 +1,9 @@
-/* Content Card Styles - Xfinity Hub */
-.content-card {
+/* =========================================================
+   Content Card – Variant 1 (Default / Vertical)
+   ========================================================= */
+
+.content-card,
+.content-card.card--variant-1 {
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -28,7 +32,9 @@
     font-size: 0.95rem;
 }
 
-.card-image-wrapper {
+/* Image */
+.content-card.card--variant-1 .card-image-wrapper,
+.content-card .card-image-wrapper {
     position: relative;
     overflow: hidden;
     background-color: #f0f0f0;
@@ -46,13 +52,14 @@
     transform: scale(1.05);
 }
 
+/* Category badge */
 .card-category-badge {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     background-color: rgba(61, 24, 129, 0.9);
-    color: white;
+    color: #ffffff;
     padding: 0.4rem 1.2rem;
     font-size: 0.7rem;
     font-weight: 600;
@@ -61,6 +68,7 @@
     text-align: center;
 }
 
+/* Content */
 .card-content {
     padding: 1.5rem;
     display: flex;
@@ -75,11 +83,6 @@
     color: #231F20;
     margin: 0;
     line-height: 1.35;
-    transition: color 0.2s ease;
-}
-
-.content-card:hover .card-title {
-    color: #231F20;
 }
 
 .card-description {
@@ -90,6 +93,7 @@
     flex-grow: 1;
 }
 
+/* CTA */
 .card-link {
     display: inline-flex;
     align-items: center;
@@ -100,7 +104,6 @@
     font-size: 0.95rem;
     transition: all 0.2s ease;
     align-self: flex-start;
-    margin-top: 0.5rem;
 }
 
 .card-link:hover {
@@ -117,57 +120,114 @@
     transform: translateX(2px);
 }
 
-/* Responsive Grid Container */
+/* =========================================================
+   Content Card – Variant 2 (Horizontal / Editorial)
+   ========================================================= */
+
+.content-card.card--variant-2 {
+    flex-direction: row;
+    min-height: 340px;
+    background: linear-gradient(90deg, #7434f4 50%, #5a2abf 50%);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* Left image section */
+.content-card.card--variant-2 .card-image-wrapper {
+    width: 50%;
+    aspect-ratio: auto;
+    background-color: transparent;
+}
+
+.content-card.card--variant-2 .card-image {
+    object-fit: contain;
+    padding: 3rem;
+}
+
+/* Hide top badge */
+.content-card.card--variant-2 .card-category-badge {
+    display: none;
+}
+
+/* Right content */
+.content-card.card--variant-2 .card-content {
+    width: 50%;
+    padding: 4rem;
+    justify-content: center;
+    color: #ffffff;
+}
+
+/* Title */
+.content-card.card--variant-2 .card-title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+/* Description */
+.content-card.card--variant-2 .card-description {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 460px;
+}
+
+/* CTA */
+.content-card.card--variant-2 .card-link {
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.content-card.card--variant-2 .card-link:hover {
+    color: #e6ddff;
+}
+
+/* =========================================================
+   Responsive Grid Container
+   ========================================================= */
+
 .content-cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
-    padding: 0;
 }
 
-/* Desktop: 3-4 columns */
 @media (min-width: 1200px) {
     .content-cards-container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
     }
 }
 
-/* Tablet: 2 columns */
 @media (min-width: 768px) and (max-width: 1199px) {
     .content-cards-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
-    
-    .card-content {
-        padding: 1.5rem;
-    }
 }
 
-/* Mobile: 1 column */
 @media (max-width: 767px) {
     .content-cards-container {
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
-    
-    .card-image-wrapper {
-        aspect-ratio: 4 / 3;
+
+    /* Mobile behavior for Variant 2 */
+    .content-card.card--variant-2 {
+        flex-direction: column;
     }
-    
-    .card-content {
-        padding: 1.25rem;
+
+    .content-card.card--variant-2 .card-image-wrapper,
+    .content-card.card--variant-2 .card-content {
+        width: 100%;
     }
-    
-    .card-title {
-        font-size: 1.05rem;
+
+    .content-card.card--variant-2 .card-content {
+        padding: 2rem;
     }
-    
-    .card-category-badge {
-        top: 1rem;
-        left: 1rem;
-        font-size: 0.7rem;
-        padding: 0.4rem 0.8rem;
+
+    .content-card.card--variant-2 .card-title {
+        font-size: 1.6rem;
     }
 }
