@@ -2,18 +2,19 @@
 .content-card {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    border: 1px solid #e8e8e8;
-    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    font-family: DMSans, Helvetica, sans-serif;
+    margin: 12px;
 }
 
 .content-card:hover {
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
     border-color: #d0d0d0;
 }
 
@@ -31,7 +32,7 @@
     position: relative;
     overflow: hidden;
     background-color: #f0f0f0;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 4 / 3;
 }
 
 .card-image {
@@ -42,51 +43,49 @@
 }
 
 .content-card:hover .card-image {
-    transform: scale(1.08);
+    transform: scale(1.05);
 }
 
 .card-category-badge {
     position: absolute;
-    top: 1.2rem;
-    left: 1.2rem;
-    background-color: #0066CC;
-    opacity: 0.9;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(61, 24, 129, 0.9);
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.73rem;
-    font-weight: 700;
+    padding: 0.4rem 1.2rem;
+    font-size: 0.7rem;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+    letter-spacing: 0.4px;
+    text-align: center;
 }
 
 .card-content {
-    padding: 1.75rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    gap: 1rem;
+    gap: 0.75rem;
 }
 
 .card-title {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: #231F20;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.35;
     transition: color 0.2s ease;
 }
 
 .content-card:hover .card-title {
-    color: #0052A3;
+    color: #231F20;
 }
 
 .card-description {
-    font-size: 0.95rem;
-    color: #666666;
-    line-height: 1.6;
+    font-size: 0.9rem;
+    color: #424242;
+    line-height: 1.5;
     margin: 0;
     flex-grow: 1;
 }
@@ -121,7 +120,7 @@
 /* Responsive Grid Container */
 .content-cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     padding: 0;
 }

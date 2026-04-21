@@ -1,4 +1,7 @@
-/* Header Styles - Xfinity Hub */
+/* =========================================================
+   Header Styles – Xfinity Global Header
+   ========================================================= */
+
 .xfinity-header {
     background-color: #ffffff;
     border-bottom: 1px solid #f0f0f0;
@@ -6,21 +9,31 @@
     top: 0;
     z-index: 1000;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-    height: 60px;
+    height: auto;
+    min-height: 72px;
     display: flex;
     align-items: center;
+    font-family: DMSans, Helvetica, sans-serif;
+    padding: 0.75rem 0;
 }
 
+/* ---------------------------------------------------------
+   Layout Container
+   --------------------------------------------------------- */
 .header-container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+    width: 100%;
 }
 
+/* ---------------------------------------------------------
+   Logo
+   --------------------------------------------------------- */
 .header-logo {
     flex-shrink: 0;
     display: flex;
@@ -33,6 +46,16 @@
     height: auto;
 }
 
+.logo-text {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #000;
+    letter-spacing: -0.5px;
+}
+
+/* ---------------------------------------------------------
+   Mobile Menu Toggle
+   --------------------------------------------------------- */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -51,9 +74,13 @@
     transition: all 0.3s ease;
 }
 
+/* ---------------------------------------------------------
+   Primary Navigation
+   --------------------------------------------------------- */
 .header-nav {
     flex: 1;
     display: flex;
+    overflow: hidden;
 }
 
 .nav-menu {
@@ -61,7 +88,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 0;
+    align-content: flex-start;
 }
 
 .nav-menu li {
@@ -70,21 +97,26 @@
 
 .nav-menu a {
     display: block;
-    padding: 1rem 1.5rem;
+    padding: 0.75rem 1.25rem;
     color: #231F20;
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
     transition: all 0.2s ease;
     border-bottom: 3px solid transparent;
+    white-space: normal;
+    line-height: 1.2;
 }
 
 .nav-menu a:hover {
-    background-color: #f5f5f5;
-    border-bottom-color: #0066cc;
-    color: #0066cc;
+    background-color: transparent;
+    border-bottom-color: #3d1881;
+    color: #231F20;
 }
 
+/* ---------------------------------------------------------
+   Right Actions (Icons + Sign In)
+   --------------------------------------------------------- */
 .header-actions {
     display: flex;
     align-items: center;
@@ -92,67 +124,57 @@
     flex-shrink: 0;
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    border: 1px solid #d0d0d0;
-    border-radius: 4px;
-    background-color: #f9f9f9;
-    padding: 0.5rem;
-    min-width: 200px;
-}
-
-.search-bar input {
-    border: none;
-    background: transparent;
-    padding: 0.5rem;
-    flex: 1;
-    font-size: 0.9rem;
-    color: #231F20;
-    outline: none;
-}
-
-.search-bar input::placeholder {
-    color: #999;
-}
-
-.search-bar button {
+.icon-btn {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.25rem;
+    font-size: 1.05rem;
     display: flex;
     align-items: center;
-    color: #666;
+    padding: 0.25rem;
+    color: #231F20;
     transition: color 0.2s ease;
 }
 
-.search-bar button:hover {
-    color: #0066cc;
+.icon-btn:hover {
+    color: #171718;
 }
 
 .sign-in-btn {
-    background-color: #0066cc;
-    color: white;
+    background-color: transparent;
+    color: #231F20;
     border: none;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
     cursor: pointer;
     font-weight: 600;
     font-size: 0.95rem;
-    transition: all 0.2s ease;
     white-space: nowrap;
+    padding-left: 0.5rem;
 }
 
 .sign-in-btn:hover {
-    background-color: #0052a3;
-    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.25);
+    text-decoration: underline;
 }
 
-/* Responsive Design */
+/* ---------------------------------------------------------
+   Tablet Adjustments
+   --------------------------------------------------------- */
+@media (max-width: 1024px) {
+    .nav-menu a {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .header-actions {
+        gap: 0.75rem;
+    }
+}
+
+/* ---------------------------------------------------------
+   Mobile Styles
+   --------------------------------------------------------- */
 @media (max-width: 768px) {
     .header-container {
-        padding: 0.75rem 1rem;
+        padding: 0 1rem;
         gap: 1rem;
     }
 
@@ -163,10 +185,10 @@
 
     .header-nav {
         position: absolute;
-        top: 100%;
+        top: 72px;
         left: 0;
         right: 0;
-        background-color: white;
+        background-color: #ffffff;
         border-bottom: 1px solid #e0e0e0;
         flex-direction: column;
         max-height: 0;
@@ -189,36 +211,28 @@
     }
 
     .nav-menu a:hover {
-        border-bottom: 1px solid #f0f0f0;
         border-right-color: #0066cc;
+        background-color: #f9f9f9;
     }
 
     .header-actions {
-        flex-direction: column;
-        gap: 0.5rem;
-        order: 4;
-    }
-
-    .search-bar {
         display: none;
-    }
-
-    .sign-in-btn {
-        width: 100%;
     }
 }
 
+/* ---------------------------------------------------------
+   Small Mobile
+   --------------------------------------------------------- */
 @media (max-width: 480px) {
     .header-container {
-        padding: 0.5rem;
+        padding: 0 0.75rem;
     }
 
     .header-logo svg {
         width: 80px;
     }
 
-    .sign-in-btn {
-        padding: 0.6rem 1rem;
-        font-size: 0.85rem;
+    .logo-text {
+        font-size: 1.4rem;
     }
 }
