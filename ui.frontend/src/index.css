@@ -30,6 +30,43 @@ body {
   background-color: #ffffff;
 }
 
+/* Responsive Grid for Cards */
+.responsivegrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Desktop: 3 columns */
+@media (min-width: 1200px) {
+  .responsivegrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 0 2rem;
+  }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .responsivegrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+  .responsivegrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+}
+
 h1,
 h2,
 h3,

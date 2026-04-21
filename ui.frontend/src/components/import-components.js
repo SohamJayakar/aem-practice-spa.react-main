@@ -19,6 +19,10 @@ import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 import './TitleText/TitleText';
+import './Header/Header';
+import './HeroContent/HeroContent';
+import './ContentCard/ContentCard';
+import './Footer/Footer';
 
 import {MapTo} from '@adobe/aem-react-editable-components';
 
@@ -93,3 +97,8 @@ const TextEditConfig = {
 };
 
 MapTo('wknd-spa-react/components/text')(LazyTextComponent, TextEditConfig);
+
+/**
+ * New Xfinity Hub Components
+ * Header, HeroContent, ContentCard, and Footer are already imported above
+ */

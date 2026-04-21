@@ -1,0 +1,174 @@
+/* Content Card Styles - Xfinity Hub */
+.content-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    border-color: #d0d0d0;
+}
+
+.content-card.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    background-color: #f5f5f5;
+    color: #999;
+    font-size: 0.95rem;
+}
+
+.card-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    aspect-ratio: 16 / 9;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.content-card:hover .card-image {
+    transform: scale(1.08);
+}
+
+.card-category-badge {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    background-color: #0066CC;
+    opacity: 0.9;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.73rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 8px rgba(0, 102, 204, 0.3);
+}
+
+.card-content {
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #231F20;
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+}
+
+.content-card:hover .card-title {
+    color: #0052A3;
+}
+
+.card-description {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #0066CC;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.card-link:hover {
+    color: #0052A3;
+    gap: 0.75rem;
+}
+
+.card-link svg {
+    stroke: currentColor;
+    transition: transform 0.2s ease;
+}
+
+.card-link:hover svg {
+    transform: translateX(2px);
+}
+
+/* Responsive Grid Container */
+.content-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+
+/* Desktop: 3-4 columns */
+@media (min-width: 1200px) {
+    .content-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Tablet: 2 columns */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .content-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .card-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Mobile: 1 column */
+@media (max-width: 767px) {
+    .content-cards-container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+    
+    .card-image-wrapper {
+        aspect-ratio: 4 / 3;
+    }
+    
+    .card-content {
+        padding: 1.25rem;
+    }
+    
+    .card-title {
+        font-size: 1.05rem;
+    }
+    
+    .card-category-badge {
+        top: 1rem;
+        left: 1rem;
+        font-size: 0.7rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

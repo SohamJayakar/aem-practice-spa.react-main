@@ -28,6 +28,9 @@ public class TitleTextComponentImpl implements TitleTextComponent {
     @ValueMapValue
     private String description;
 
+    @ValueMapValue
+    private String subtitle;
+
     static final String RESOURCE_TYPE = "wknd-spa-react/components/title-text-component";
 
     // This function is important to export JSON depending on resourcetype.
@@ -45,5 +48,10 @@ public class TitleTextComponentImpl implements TitleTextComponent {
     @Override
     public String getDescription() {
         return description;
+    }
+
+    @Override
+    public String getSubtitle() {
+        return subtitle;
     }
 }

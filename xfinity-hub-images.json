@@ -1,0 +1,474 @@
+{
+  "projectName": "Xfinity Hub AEM Practice SPA",
+  "imageAssets": [
+    {
+      "id": 1,
+      "category": "Internet",
+      "title": "5 Year Price Guarantee",
+      "fileName": "price-guarantee.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/internet/price-guarantee.png",
+      "folder": "internet",
+      "cardTitle": "What to Know About the New 5 Year Price Guarantee",
+      "cardLink": "https://www.xfinity.com/hub/internet/5-year-price-guarantee",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#0066CC",
+        "secondary": "#0052A3",
+        "text": "#FFFFFF",
+        "background": "Gradient: #0066CC to #0052A3"
+      },
+      "designElements": [
+        "WiFi icon",
+        "Lock icon (security)",
+        "Calendar showing 5 YEARS",
+        "Gradient background",
+        "Professional typography"
+      ],
+      "description": "Bright, modern design featuring vibrant Xfinity blue gradient background with center-prominent WiFi icon. Lock/security icon overlay represents price guarantee protection. Calendar element displays '5 YEARS' in bold white text. Clean, minimal design with subtle light rays or network pattern texture.",
+      "designStyle": "Modern, clean, professional, tech-forward",
+      "desiredLook": "Modern, gradient-based, icon-heavy, minimalist, professional",
+      "metadata": {
+        "altText": "Internet service with 5 year price guarantee protection",
+        "title": "5 Year Price Guarantee",
+        "description": "Lock in your internet rate for 5 years with Xfinity's price protection.",
+        "tags": ["internet", "pricing", "guarantee", "service"]
+      }
+    },
+    {
+      "id": 2,
+      "category": "Entertainment",
+      "title": "Major League Baseball",
+      "fileName": "baseball.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/baseball.png",
+      "folder": "entertainment",
+      "cardTitle": "Where to Watch Major League Baseball this Season",
+      "cardLink": "https://www.xfinity.com/hub/tv-video/baseball",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#2E7D32",
+        "secondary": "#1565C0",
+        "accent": "#FDD835",
+        "text": "#FFFFFF",
+        "background": "Green field with stadium lighting"
+      },
+      "designElements": [
+        "Baseball diamond/field",
+        "Stadium lights",
+        "Baseball",
+        "MLB logos",
+        "Dynamic composition"
+      ],
+      "description": "Dynamic sports-themed design featuring baseball diamond or field background in rich green. Baseball elements include stadium lights, baseball, and visible MLB branding. Professional sports photography feel with bold, energetic color palette emphasizing stadium atmosphere. Dynamic composition suggests action and excitement.",
+      "designStyle": "Dynamic, energetic, sports-focused, professional photography",
+      "desiredLook": "Action-oriented, stadium atmosphere, sports energy, professional photography or illustration",
+      "metadata": {
+        "altText": "Major League Baseball games available on Xfinity TV",
+        "title": "Major League Baseball on Xfinity",
+        "description": "Watch Major League Baseball games on Xfinity TV this season.",
+        "tags": ["entertainment", "sports", "baseball", "mlb", "tv"]
+      }
+    },
+    {
+      "id": 3,
+      "category": "Entertainment",
+      "title": "April Streaming Content",
+      "fileName": "streaming-april.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/streaming-april.png",
+      "folder": "entertainment",
+      "cardTitle": "Streaming in April: Peacockfest, 'ted' Season 2 and 'Wicked: For Good'",
+      "cardLink": "https://www.xfinity.com/hub/tv-video/what-to-stream",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#6F3FA8",
+        "secondary": "#00A4EF",
+        "accent": "#FF6B9D",
+        "text": "#FFFFFF",
+        "background": "Peacock purple with teal accents"
+      },
+      "designElements": [
+        "Show artwork collage",
+        "Peacock branding",
+        "Multiple entertainment properties",
+        "Streaming content thumbnails",
+        "April/new release badges"
+      ],
+      "description": "Vibrant streaming/entertainment showcase featuring multiple show artwork or promotional images (Peacock Premium, 'Ted' Season 2, 'Wicked: For Good'). Peacock brand purple and teal colors prominently featured. Collage-style layout shows multiple entertainment options. Bright, colorful palette reflects entertainment diversity with modern, trending feel.",
+      "designStyle": "Modern, trendy, collage-style, promotional, vibrant",
+      "desiredLook": "Trendy, colorful collage, multiple show covers, Peacock branding, New/Coming Soon feel",
+      "metadata": {
+        "altText": "New streaming content available in April on Xfinity",
+        "title": "April Streaming: Peacockfest & More",
+        "description": "Discover Peacock premium, Ted Season 2, and Wicked: For Good coming in April.",
+        "tags": ["entertainment", "streaming", "peacock", "shows", "april"]
+      }
+    },
+    {
+      "id": 4,
+      "category": "Mobile",
+      "title": "Premium Unlimited Plan",
+      "fileName": "premium-unlimited.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/mobile/premium-unlimited.png",
+      "folder": "mobile",
+      "cardTitle": "New Premium Unlimited Plan Delivers Unmatched Mobile Experience at a Better Price",
+      "cardLink": "https://www.xfinity.com/hub/mobile/premium-unlimited-plan",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#0066CC",
+        "secondary": "#F5F5F5",
+        "accent": "#4CAF50",
+        "text": "#231F20",
+        "background": "Clean white to light gradient"
+      },
+      "designElements": [
+        "Modern smartphone",
+        "5G icon",
+        "Connectivity indicators",
+        "Signal waves",
+        "Premium tech materials (glass, metal)"
+      ],
+      "description": "Premium mobile service showcase featuring modern smartphone prominently centered. Bright, clean background with white or light modern gradient. 5G icon and connectivity indicators displayed. Premium feel suggested through high-end materials. Network/connection visual elements like signal waves and connectivity dots. Modern, sleek, premium tech aesthetic.",
+      "designStyle": "Premium, tech-focused, modern, sleek, high-end",
+      "desiredLook": "Sleek smartphone, 5G indicators, premium materials, clean white background, connectivity visualization",
+      "metadata": {
+        "altText": "Xfinity Mobile Premium Unlimited Plan with 5G connectivity",
+        "title": "Premium Unlimited Mobile Plan",
+        "description": "Experience premium mobile with unlimited data and 5G connectivity.",
+        "tags": ["mobile", "5g", "premium", "unlimited", "plan"]
+      }
+    },
+    {
+      "id": 5,
+      "category": "Entertainment",
+      "title": "Peacock Premium",
+      "fileName": "peacock-premium.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/peacock-premium.png",
+      "folder": "entertainment",
+      "cardTitle": "How to Get Peacock Premium With Xfinity Entertainment",
+      "cardLink": "https://www.xfinity.com/hub/tv-video/peacock-premium",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#6F3FA8",
+        "secondary": "#00A4EF",
+        "accent": "#FFB81C",
+        "text": "#FFFFFF",
+        "background": "Peacock purple with teal accents"
+      },
+      "designElements": [
+        "Peacock logo/bird icon",
+        "Premium branding",
+        "Streaming content thumbnails",
+        "Purple and teal color scheme",
+        "Content library suggestions"
+      ],
+      "description": "Peacock Premium brand showcase featuring prominent Peacock logo/brand with iconic peacock bird element. Rich purple and teal color scheme reflecting Peacock brand colors. Premium streaming service visual representations included. Could feature content thumbnails or streaming icons. Clean, recognizable Peacock branding with high-quality, professional design.",
+      "designStyle": "Premium, brand-focused, modern, entertainment-forward",
+      "desiredLook": "Peacock logo/bird prominent, brand colors purple/teal, premium feel, streaming content suggestion, professional",
+      "metadata": {
+        "altText": "Get Peacock Premium included with Xfinity Entertainment",
+        "title": "Peacock Premium with Xfinity Entertainment",
+        "description": "Enjoy Peacock Premium streaming with your Xfinity Entertainment subscription.",
+        "tags": ["entertainment", "peacock", "premium", "streaming", "xfinity"]
+      }
+    },
+    {
+      "id": 6,
+      "category": "Experience",
+      "title": "Xfinity Membership",
+      "fileName": "membership.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/experience/membership.png",
+      "folder": "experience",
+      "cardTitle": "Introducing Xfinity Membership Benefits",
+      "cardLink": "https://www.xfinity.com/hub/experience/xfinity-membership",
+      "dimensions": {
+        "primary": "1200x675",
+        "display": "400x225",
+        "aspectRatio": "16:9"
+      },
+      "fileSize": {
+        "png": "120-150KB",
+        "webp": "60-80KB",
+        "recommended": "PNG"
+      },
+      "colorScheme": {
+        "primary": "#0066CC",
+        "secondary": "#D4A574",
+        "accent": "#FFD700",
+        "text": "#FFFFFF",
+        "background": "Xfinity blue with gold accents"
+      },
+      "designElements": [
+        "Membership card",
+        "Rewards badge",
+        "Benefits icons (discounts, perks, points)",
+        "Gold/premium accent colors",
+        "Loyalty indicators"
+      ],
+      "description": "Membership/loyalty program showcase featuring membership card or rewards badge prominently and professionally. Gold or premium accent colors suggesting premium status and value. Xfinity Blue as primary color. Benefits icons/illustrations showing discounts, perks, loyalty points, and rewards. Warm, welcoming, inclusive feel with family-oriented or community elements. VIP and premium service indicators throughout.",
+      "designStyle": "Warm, inclusive, premium rewards-focused, professional",
+      "desiredLook": "Membership card prominent, gold/premium accents, benefits icons, loyalty feel, warm and welcoming, family-friendly",
+      "metadata": {
+        "altText": "Join Xfinity Membership program for exclusive benefits and rewards",
+        "title": "Xfinity Membership Benefits",
+        "description": "Get exclusive benefits and rewards with Xfinity Membership program.",
+        "tags": ["experience", "membership", "loyalty", "rewards", "benefits"]
+      }
+    }
+  ],
+  "damStructure": {
+    "basePath": "/content/dam/wknd-spa-react/images/xfinity-hub",
+    "folders": {
+      "internet": {
+        "path": "/content/dam/wknd-spa-react/images/xfinity-hub/internet",
+        "description": "Internet service category images"
+      },
+      "entertainment": {
+        "path": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment",
+        "description": "Entertainment and streaming category images"
+      },
+      "mobile": {
+        "path": "/content/dam/wknd-spa-react/images/xfinity-hub/mobile",
+        "description": "Mobile service category images"
+      },
+      "experience": {
+        "path": "/content/dam/wknd-spa-react/images/xfinity-hub/experience",
+        "description": "Experience and membership category images"
+      }
+    }
+  },
+  "specifications": {
+    "imageStandards": {
+      "aspectRatio": "16:9",
+      "primaryDimensions": {
+        "width": 1200,
+        "height": 675,
+        "unit": "px"
+      },
+      "displayDimensions": {
+        "width": 400,
+        "height": 225,
+        "unit": "px"
+      },
+      "responsiveSizes": [
+        {
+          "size": "large",
+          "dimensions": "1200x675",
+          "fileSize": "120-150KB",
+          "useCase": "Desktop full-width"
+        },
+        {
+          "size": "medium",
+          "dimensions": "800x450",
+          "fileSize": "80-100KB",
+          "useCase": "Tablet views"
+        },
+        {
+          "size": "small",
+          "dimensions": "400x225",
+          "fileSize": "30-50KB",
+          "useCase": "Mobile views"
+        }
+      ],
+      "formats": {
+        "primary": "PNG",
+        "alternative": "WebP",
+        "optimization": "Compressed for web (50-200KB per image)"
+      },
+      "colorSpace": "sRGB",
+      "quality": "High quality, optimized for web delivery"
+    },
+    "colorScheme": {
+      "brandColors": {
+        "primaryBlue": "#0066CC",
+        "darkBlue": "#0052A3",
+        "darkText": "#231F20",
+        "footerBackground": "#231F20",
+        "lightGray": "#F5F5F5"
+      },
+      "peacockBrand": {
+        "purple": "#6F3FA8",
+        "teal": "#00A4EF",
+        "gold": "#FFB81C"
+      }
+    },
+    "typography": {
+      "fontFamily": "System fonts (modern, clean)",
+      "sizes": {
+        "header": "2.5rem (40-44px)",
+        "subheading": "1.1rem (17-18px)",
+        "body": "0.95-1rem"
+      },
+      "weights": {
+        "bold": 700,
+        "semibold": 600,
+        "regular": 400
+      }
+    }
+  },
+  "componentIntegration": {
+    "reactComponent": "ui.frontend/src/components/ContentCard/ContentCard.js",
+    "javaModel": "core/src/main/java/com/practice/react/core/models/ContentCardComponent.java",
+    "aemComponentPath": "ui.apps/src/main/content/jcr_root/apps/wknd-spa-react/components/content-card/",
+    "propertyMapping": {
+      "cardImage": "damPath reference",
+      "category": "category field value",
+      "title": "cardTitle from component",
+      "description": "optional description",
+      "link": "cardLink URL"
+    }
+  },
+  "uploadChecklist": [
+    "All 6 images exported at 1200x675px (16:9 aspect ratio)",
+    "Images optimized for web (PNG: 120-150KB, WebP: 60-80KB)",
+    "File names match specification (lowercase, hyphens)",
+    "Metadata prepared (title, alt text, description)",
+    "Create folder structure in DAM (internet, entertainment, mobile, experience)",
+    "Upload images to correct folders",
+    "Fill in metadata for each image",
+    "Verify DAM paths match specification",
+    "Test images render correctly",
+    "Publish assets"
+  ],
+  "imageSourcingOptions": {
+    "option1": {
+      "method": "Download from live site",
+      "steps": [
+        "Visit https://www.xfinity.com/hub",
+        "Right-click card images and inspect",
+        "Find image URLs from img src attributes",
+        "Download images",
+        "Re-export to 1200x675px if needed",
+        "Optimize for web"
+      ],
+      "pros": "Matches live site exactly",
+      "cons": "May have licensing/rights issues"
+    },
+    "option2": {
+      "method": "Create custom graphics",
+      "tools": [
+        "Figma (free tier available)",
+        "Canva (web-based, templates)",
+        "Adobe Express (free, Xfinity colors)",
+        "GIMP (free, open-source)"
+      ],
+      "pros": "Full control, custom design",
+      "cons": "Requires design skills"
+    },
+    "option3": {
+      "method": "Use stock images",
+      "sources": [
+        "Unsplash (free, high-quality)",
+        "Pexels (free, no attribution)",
+        "Pixabay (free downloads)",
+        "Shutterstock (paid, professional)"
+      ],
+      "searchTerms": {
+        "internet": "fiber optic, network, technology",
+        "baseball": "baseball stadium, sports, field",
+        "streaming": "entertainment, tv show, content",
+        "mobile": "smartphone, 5G network, mobile tech",
+        "peacock": "premium content, streaming",
+        "membership": "loyalty program, rewards, benefits"
+      },
+      "pros": "Quick, low cost",
+      "cons": "May need customization"
+    }
+  },
+  "quickReferenceTable": [
+    {
+      "category": "Internet",
+      "fileName": "price-guarantee.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/internet/price-guarantee.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    },
+    {
+      "category": "Entertainment",
+      "fileName": "baseball.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/baseball.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    },
+    {
+      "category": "Entertainment",
+      "fileName": "streaming-april.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/streaming-april.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    },
+    {
+      "category": "Mobile",
+      "fileName": "premium-unlimited.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/mobile/premium-unlimited.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    },
+    {
+      "category": "Entertainment",
+      "fileName": "peacock-premium.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/peacock-premium.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    },
+    {
+      "category": "Experience",
+      "fileName": "membership.png",
+      "damPath": "/content/dam/wknd-spa-react/images/xfinity-hub/experience/membership.png",
+      "dimensions": "1200x675",
+      "fileSize": "120-150KB"
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-04-20",
+    "updated": "2026-04-20",
+    "status": "Ready for DAM Preparation",
+    "author": "Xfinity Hub Project Team",
+    "liveReference": "https://www.xfinity.com/hub",
+    "aemProjectPath": "/content/dam/wknd-spa-react/images/xfinity-hub/"
+  }
+}

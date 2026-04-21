@@ -24,8 +24,8 @@ const TitleTextEditConfig = {
 };
 
 /**
- * Below is TitleText React component to render title 
- * and description as part of render() function.
+ * Below is TitleText React component to render title,
+ * subtitle and description as part of render() function.
  */
 class TitleText extends Component {
 
@@ -33,12 +33,13 @@ class TitleText extends Component {
   get textContent() {
     return <div className='title-text'>
             <h1>{this.props.title}</h1>
+            {this.props.subtitle && <h2 className='subtitle'>{this.props.subtitle}</h2>}
             <p>{this.props.description}</p>
            </div>;
   }
 
   render() {
-    return this.props.title ? this.textContent : "test";
+    return this.props.title ? this.textContent : "Please add a title";
   }
 }
 

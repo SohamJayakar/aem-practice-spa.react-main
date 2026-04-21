@@ -370,6 +370,22 @@
                         components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/text]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
+                    <xfinity-root
+                        jcr:description="Root policy for Xfinity Hub SPA template sections."
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Xfinity Hub Root"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/wknd-spa-react/components/header,/apps/wknd-spa-react/components/hero-content,/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/footer]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </xfinity-root>
+                    <xfinity-cards
+                        jcr:description="Editable card area for Xfinity Hub pages."
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Xfinity Hub Cards"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/wknd-spa-react/components/content-card]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </xfinity-cards>
                     </responsivegrid>
             </components>
         </foundation>
