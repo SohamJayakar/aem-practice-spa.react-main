@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2026-04-20T10:00:00.000-07:00"
+        cq:lastModified="{Date}2026-04-21T20:06:49.474+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/xfinity-hub-template"
         jcr:primaryType="cq:PageContent"
@@ -19,6 +19,7 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <card1
+                    cq:styleIds="[1776781654280]"
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2026-04-20T10:00:00.000-07:00"
@@ -27,10 +28,11 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/internet/price-guarantee.png"
                     category="Internet"
-                    title="What to Know About the New 5 Year Price Guarantee"
                     description="Lock in your rate for 5 years with Xfinity Internet. Learn more about what this means for you."
-                    link="/hub/internet/5-year-price-guarantee"/>
+                    link="/hub/internet/5-year-price-guarantee"
+                    title="What to Know About the New 5 Year Price Guarantee"/>
                 <card2
+                    cq:styleIds="[1776781598574]"
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2026-04-20T10:00:00.000-07:00"
@@ -39,9 +41,16 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/baseball.jpg"
                     category="Entertainment"
-                    title="Where to Watch Major League Baseball this Season"
                     description="Stream all your favorite MLB games on Xfinity. Find out how to watch this season."
-                    link="/hub/tv-video/baseball"/>
+                    link="/hub/tv-video/baseball"
+                    title="Where to Watch Major League Baseball this Season">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </card2>
                 <card3
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
@@ -51,9 +60,16 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/streaming-april.jpg"
                     category="Entertainment"
-                    title="Streaming in April: Peacockfest, 'ted' Season 2 and 'Wicked: For Good'"
                     description="Discover the latest streaming releases available on Peacock and Xfinity Entertainment platforms."
-                    link="/hub/tv-video/what-to-stream"/>
+                    link="/hub/tv-video/what-to-stream"
+                    title="Streaming in April: Peacockfest, 'ted' Season 2 and 'Wicked: For Good'">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </card3>
                 <card4
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
@@ -63,9 +79,16 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/mobile/premium-unlimited.jpg"
                     category="Mobile"
-                    title="New Premium Unlimited Plan Delivers Unmatched Mobile Experience at a Better Price"
                     description="Experience the best mobile service with our new Premium Unlimited Plan at an even better value."
-                    link="/hub/mobile/premium-unlimited-plan"/>
+                    link="/hub/mobile/premium-unlimited-plan"
+                    title="New Premium Unlimited Plan Delivers Unmatched Mobile Experience at a Better Price">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </card4>
                 <card5
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
@@ -75,9 +98,16 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/entertainment/peacock-premium.jpg"
                     category="Entertainment"
-                    title="How to Get Peacock Premium With Xfinity"
                     description="Get premium streaming content included with select Xfinity Entertainment packages."
-                    link="/hub/tv-video/peacock-premium"/>
+                    link="/hub/tv-video/peacock-premium"
+                    title="How to Get Peacock Premium With Xfinity">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="3"/>
+                    </cq:responsive>
+                </card5>
                 <card6
                     jcr:created="{Date}2026-04-20T10:00:00.000-07:00"
                     jcr:createdBy="admin"
@@ -87,9 +117,9 @@
                     sling:resourceType="wknd-spa-react/components/content-card"
                     cardImage="/content/dam/wknd-spa-react/images/xfinity-hub/experience/membership.png"
                     category="Experience"
-                    title="Introducing Xfinity Membership Benefits"
                     description="Unlock exclusive benefits and rewards with your Xfinity Membership."
-                    link="/hub/experience/xfinity-membership"/>
+                    link="/hub/experience/xfinity-membership"
+                    title="Introducing Xfinity Membership Benefits"/>
             </responsivegrid>
         </root>
     </jcr:content>
