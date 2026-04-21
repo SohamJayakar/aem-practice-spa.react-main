@@ -1,0 +1,45 @@
+.hub-navigation {
+    background-color: #f6f6f8;
+    padding: 1rem 0;
+    font-family: DMSans, Helvetica, sans-serif;
+}
+
+.hub-nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pills */
+.hub-nav-list a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #231F20;
+    transition: all 0.2s ease;
+}
+
+.hub-nav-list a:hover {
+    background-color: #efe9ff;
+    color: #5a2ee0;
+}
+
+/* Mobile: horizontal scroll */
+@media (max-width: 768px) {
+    .hub-nav-list {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 0 1rem;
+    }
+
+    .hub-nav-list a {
+        white-space: nowrap;
+    }
+}

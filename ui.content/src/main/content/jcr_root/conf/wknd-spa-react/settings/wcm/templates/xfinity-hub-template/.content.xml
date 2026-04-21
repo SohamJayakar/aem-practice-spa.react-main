@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:created="{Date}2026-04-20T10:00:00.000-07:00"
         cq:createdBy="admin"
-        jcr:primaryType="cq:PageContent"
+        cq:lastModified="{Date}2026-04-21T20:44:41.497+05:30"
+        cq:lastModifiedBy="admin"
         jcr:description="Xfinity Hub SPA page template with fixed header/footer and authored cards"
+        jcr:primaryType="cq:PageContent"
         jcr:title="Xfinity Hub SPA Page"
         status="enabled"/>
 </jcr:root>

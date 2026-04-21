@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2026-04-21T15:06:59.069+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/xfinity-hub-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="wknd-spa-react/components/page">
@@ -13,14 +15,6 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wknd-spa-react/components/header"
                 logoAlt="Xfinity Logo"/>
-            <herocontent
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="wknd-spa-react/components/hero-content"
-                category="Internet"
-                ctaLabel="Check Email"
-                ctaLink="https://xfinityconnect.email.comcast.net/"
-                description="You can now check your Comcast email by selecting your account icon in the navigation menu or click the link below."
-                headline="Looking for email?"/>
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"

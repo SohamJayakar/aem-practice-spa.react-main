@@ -19,6 +19,7 @@ import './Page/Page';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
 import './TitleText/TitleText';
+import './HubNavigation/HubNavigation';
 import './Header/Header';
 import './HeroContent/HeroContent';
 import './ContentCard/ContentCard';
