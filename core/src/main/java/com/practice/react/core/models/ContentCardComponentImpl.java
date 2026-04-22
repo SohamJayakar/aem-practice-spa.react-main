@@ -35,6 +35,9 @@ public class ContentCardComponentImpl implements ContentCardComponent {
     @ValueMapValue
     private String link;
 
+    @ValueMapValue
+    private String variant;
+
     static final String RESOURCE_TYPE = "wknd-spa-react/components/content-card";
 
     @Override
@@ -65,5 +68,10 @@ public class ContentCardComponentImpl implements ContentCardComponent {
     @Override
     public String getLink() {
         return link;
+    }
+
+    @Override
+    public String getVariant() {
+        return variant;
     }
 }

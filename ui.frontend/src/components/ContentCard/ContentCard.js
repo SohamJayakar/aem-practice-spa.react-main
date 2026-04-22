@@ -1,7 +1,10 @@
 import { MapTo } from '@adobe/aem-react-editable-components';
 import React, { Component } from 'react';
 
-require('./ContentCard.css');
+require('./ContentCardV1.css');
+require('./ContentCardV2.css');
+require('./ContentCardV3.css');
+require('./ContentCardV4.css');
 
 /**
  * Edit configuration for ContentCard component
@@ -23,15 +26,29 @@ class ContentCard extends Component {
             category,
             title,
             description,
-            link
+            link,
+            variant,
+            cssClassNames
         } = this.props;
 
         if (!title) {
             return <div className="content-card empty">Please add card content</div>;
         }
 
+        // Determine variant from prop or cssClassNames
+        let cardClass = 'content-card-v1';
+        if (variant === 'v2' || (cssClassNames && cssClassNames.includes('card--variant-2'))) {
+            cardClass = 'content-card-v2';
+        } else if (variant === 'v3' || (cssClassNames && cssClassNames.includes('card--variant-3'))) {
+            cardClass = 'content-card-v3';
+        } else if (variant === 'v4' || (cssClassNames && cssClassNames.includes('card--variant-4'))) {
+            cardClass = 'content-card-v4';
+        }
+        
+        const classNames = `${cardClass} ${cssClassNames || ''}`.trim();
+
         return (
-            <article className={`content-card ${this.props.appliedCssClassNames || ''}`}>
+            <article className={classNames}>
                 {cardImage && (
                     <div className="card-image-wrapper">
                         <img src={cardImage} alt={title} className="card-image" />

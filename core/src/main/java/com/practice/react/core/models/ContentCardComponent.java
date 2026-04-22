@@ -8,4 +8,5 @@ public interface ContentCardComponent extends ComponentExporter {
     public String getTitle();
     public String getDescription();
     public String getLink();
+    public String getVariant();
 }
