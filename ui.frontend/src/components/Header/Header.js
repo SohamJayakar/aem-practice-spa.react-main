@@ -29,10 +29,16 @@ class Header extends Component {
 
                     {/* Logo */}
                     <div className="header-logo">
-                        <svg width="100" height="40" viewBox="0 0 150 60" fill="none">
-                            <text x="10" y="35" fontSize="24" fontWeight="bold" fill="#231F20">Xfinity</text>
-                        </svg>
+                        <a href="/" aria-label="Home">
+                            <img
+                                src={this.props.logoImage}
+                                alt={this.props.logoAlt}
+                                className="header-logo-image"
+                            />
+                        </a>
                     </div>
+
+
 
                     {/* Mobile Menu Toggle */}
                     <button 
@@ -55,8 +61,6 @@ class Header extends Component {
                             <li><a href="/home-phone">Home Phone</a></li>
                             <li><a href="/build-your-plan">Build Your Plan</a></li>
                             <li><a href="/membership">Membership Benefits</a></li>
-                            <li><a href="/move">Move</a></li>
-                            <li><a href="/business">Comcast Business</a></li>
                         </ul>
                     </nav>
 

@@ -104,7 +104,7 @@
     font-weight: 500;
     transition: all 0.2s ease;
     border-bottom: 3px solid transparent;
-    white-space: normal;
+    white-space: nowrap;
     line-height: 1.2;
     position: relative;
 }
@@ -248,4 +248,9 @@
     .logo-text {
         font-size: 1.4rem;
     }
+}
+
+.header-logo-image {
+    width: auto;
+    display: block;
 }

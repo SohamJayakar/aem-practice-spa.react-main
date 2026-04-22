@@ -23,6 +23,11 @@ public class HeaderComponentImpl implements HeaderComponent {
     @ValueMapValue
     private String logoAlt;
 
+    
+    @ValueMapValue
+    private String logoImage;
+
+
     static final String RESOURCE_TYPE = "wknd-spa-react/components/header";
 
     @Override
@@ -34,4 +39,11 @@ public class HeaderComponentImpl implements HeaderComponent {
     public String getLogoAlt() {
         return logoAlt != null ? logoAlt : "Xfinity Logo";
     }
+
+    
+    @Override
+    public String getLogoImage() {
+        return logoImage;
+    }
+
 }
