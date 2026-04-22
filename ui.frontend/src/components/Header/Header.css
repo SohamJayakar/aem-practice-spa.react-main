@@ -106,12 +106,25 @@
     border-bottom: 3px solid transparent;
     white-space: normal;
     line-height: 1.2;
+    position: relative;
 }
 
-.nav-menu a:hover {
-    background-color: transparent;
-    border-bottom-color: #3d1881;
-    color: #231F20;
+.nav-menu a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    background: #3d1881;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav-menu a:hover:after {
+    width: 100%;
+    left: 0;
 }
 
 /* ---------------------------------------------------------
