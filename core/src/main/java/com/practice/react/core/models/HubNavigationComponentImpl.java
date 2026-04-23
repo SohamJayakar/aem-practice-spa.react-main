@@ -6,7 +6,9 @@ import org.apache.sling.api.SlingHttpServletRequest;
 import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Exporter;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.apache.sling.models.annotations.injectorspecific.ChildResource;
+import java.util.ArrayList;
+import java.util.List;
 
 @Model(
     adaptables = SlingHttpServletRequest.class,
@@ -20,8 +22,8 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 )
 public class HubNavigationComponentImpl implements HubNavigationComponent {
 
-    @ValueMapValue
-    private String text;
+    @ChildResource(name = "navitems")
+    private List<NavigationItem> navitems;
 
     static final String RESOURCE_TYPE = "wknd-spa-react/components/hub-navigation";
 
@@ -31,8 +33,8 @@ public class HubNavigationComponentImpl implements HubNavigationComponent {
     }
 
     @Override
-    public String getText() {
-        return text;
+    public List<NavigationItem> getNavItems() {
+        return navitems != null ? navitems : new ArrayList<>();
     }
     
 }

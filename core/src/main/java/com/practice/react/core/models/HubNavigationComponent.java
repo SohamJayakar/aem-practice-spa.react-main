@@ -1,6 +1,7 @@
 package com.practice.react.core.models;
 import com.adobe.cq.export.json.ComponentExporter;
+import java.util.List;
 
 public interface HubNavigationComponent extends ComponentExporter{
-    public String getText();
+    public List<NavigationItem> getNavItems();
 }
