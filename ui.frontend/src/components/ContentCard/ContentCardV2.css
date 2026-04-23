@@ -1,81 +1,147 @@
 /* =========================================================
-   Content Card – Variant 2 (Horizontal / Editorial)
-   Root class: .content-card-v2
+   Content Card – Variant 2 (Large Horizontal Card)
    ========================================================= */
 
 .content-card-v2 {
     display: flex;
     flex-direction: row;
-    min-height: 340px;
-    background: linear-gradient(90deg, #7434f4 50%, #5a2abf 50%);
-    border: none;
-    border-radius: 0;
-    margin: 1rem 2rem;
+
+    width: 100%;
+    max-width: 1440px;
+    min-height: 560px;
+
+    margin: 2rem auto;
+
+    background: #5a2abf;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
     font-family: DMSans, Helvetica, sans-serif;
 }
 
-/* Image Section */
+/* =========================================================
+   Left Image Section
+   ========================================================= */
+
 .content-card-v2 .card-image-wrapper {
-    width: 50%;
-    background-color: transparent;
+    width: 48%;
+    min-height: 100%;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content-card-v2 .card-image {
     width: 100%;
-    object-fit: contain;
-    padding: 3rem;
+    height: 100%;
+
+    object-fit: cover;
+    display: block;
 }
 
-/* Hide category */
+/* Hide category badge */
+
 .content-card-v2 .card-category-badge {
     display: none;
 }
 
-/* Content */
+/* =========================================================
+   Right Content Section
+   ========================================================= */
+
 .content-card-v2 .card-content {
-    width: 50%;
-    padding: 4rem;
+    width: 52%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding: 4rem 5rem;
+
     color: #ffffff;
-    margin-left: 4rem;
+
+    box-sizing: border-box;
 }
 
 .content-card-v2 .card-title {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     font-weight: 800;
-    line-height: 1.2;
+    line-height: 1.15;
+
     color: #ffffff;
-    margin-bottom: 1rem;
+
+    margin: 0 0 1.5rem 0;
+
+    max-width: 90%;
 }
 
 .content-card-v2 .card-description {
-    font-size: 1.05rem;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: fit-content;
-    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8;
+
+    margin: 0 0 2.5rem 0;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    max-width: 85%;
 }
 
-/* CTA */
 .content-card-v2 .card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+
     color: #ffffff;
-    font-weight: 700;
-    font-size: 1rem;
+
     text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+
+    transition: opacity 0.2s ease;
 }
 
 .content-card-v2 .card-link:hover {
-    color: #e6ddff;
+    opacity: 0.8;
 }
 
-/* Mobile */
-@media (max-width: 767px) {
+/* =========================================================
+   Large Tablet
+   ========================================================= */
+
+@media (max-width: 1200px) {
+
+    .content-card-v2 {
+        min-height: 500px;
+    }
+
+    .content-card-v2 .card-content {
+        padding: 3rem;
+    }
+
+    .content-card-v2 .card-title {
+        font-size: 2.5rem;
+        max-width: 100%;
+    }
+
+    .content-card-v2 .card-description {
+        font-size: 1.05rem;
+        max-width: 100%;
+    }
+}
+
+/* =========================================================
+   Tablet
+   ========================================================= */
+
+@media (max-width: 992px) {
+
     .content-card-v2 {
         flex-direction: column;
-        margin: 16px;
         min-height: auto;
-        background: linear-gradient(180deg, #7434f4 50%, #5a2abf 50%);
     }
 
     .content-card-v2 .card-image-wrapper,
@@ -84,22 +150,43 @@
     }
 
     .content-card-v2 .card-image-wrapper {
-        padding: 0rem;
-    }
-
-    .content-card-v2 .card-image {
-        padding: 0;
-        object-fit: contain;
+        height: 420px;
     }
 
     .content-card-v2 .card-content {
-        padding: 0;
-        margin-left: 0;
-        text-align: center;
-        min-height: 440px;
+        padding: 3rem 2.5rem;
     }
 
     .content-card-v2 .card-title {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
+    }
+}
+
+/* =========================================================
+   Mobile
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .content-card-v2 {
+        margin: 1rem;
+    }
+
+    .content-card-v2 .card-image-wrapper {
+        height: 300px;
+    }
+
+    .content-card-v2 .card-content {
+        padding: 2rem 1.5rem;
+    }
+
+    .content-card-v2 .card-title {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    .content-card-v2 .card-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
     }
 }

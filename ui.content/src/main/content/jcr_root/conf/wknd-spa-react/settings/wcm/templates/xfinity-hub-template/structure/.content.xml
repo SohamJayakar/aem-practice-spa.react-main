@@ -14,7 +14,8 @@
             <header
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wknd-spa-react/components/header"
-                logoAlt="Xfinity Logo"/>
+                logoAlt="Xfinity Logo"
+                logoImage="/content/dam/wknd-spa-react/images/xfinity-hub/logo/xfinity_logo.png"/>
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"
