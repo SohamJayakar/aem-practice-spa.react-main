@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:lastModified="{Date}2026-04-21T15:06:59.069+05:30"
+        cq:lastModified="{Date}2026-04-24T17:01:06.401+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/xfinity-hub-template"
         jcr:primaryType="cq:PageContent"

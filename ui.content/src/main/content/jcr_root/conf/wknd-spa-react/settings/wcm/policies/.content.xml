@@ -400,14 +400,48 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
                     <policy_92789347007800
-                        jcr:lastModified="{Date}2026-04-21T15:56:21.866+05:30"
+                        jcr:lastModified="{Date}2026-04-24T16:59:15.978+05:30"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="XFINITY Hub Content"
+                        jcr:title="XFINITY Hub Layout"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="group:Xfinity Hub - Content">
+                        components="[/libs/wcm/foundation/components/responsivegrid,group:Xfinity Hub - Content]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Layout"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cards-grid"
+                                        cq:styleId="1777030149609"
+                                        cq:styleLabel="v1"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
                     </policy_92789347007800>
+                    <policy_8118333125000
+                        jcr:lastModified="{Date}2026-04-24T17:00:50.425+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="XFINITY Hub Layout"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="v1"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="cards-grid"
+                                        cq:styleId="1777030233888"
+                                        cq:styleLabel="v1"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_8118333125000>
                 </responsivegrid>
             </components>
         </foundation>
