@@ -11,7 +11,6 @@
     border-radius: 8px;
     overflow: hidden;
     height: 100%;
-    margin: 1rem 2rem;
     font-family: DMSans, Helvetica, sans-serif;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
@@ -106,4 +105,55 @@
 .content-card-v1 .card-link:hover {
     color: #0052A3;
     gap: 0.75rem;
+}
+
+/* =========================================================
+   Cards Grid Layout
+   ========================================================= */
+
+.cards-grid .aem-Grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+/* Remove old AEM float layout */
+
+.cards-grid .aem-GridColumn {
+    float: none !important;
+    clear: none !important;
+
+    box-sizing: border-box;
+
+    padding: 10px;
+}
+
+/* 4 column layout */
+
+.cards-grid .aem-GridColumn--default--3 {
+    width: 25%;
+}
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .cards-grid .aem-GridColumn--default--3 {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .cards-grid .aem-GridColumn--default--3 {
+        width: 100%;
+    }
 }
